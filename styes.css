@@ -1,0 +1,142 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    background-color: deepskyblue;
+    border: 2px solid #2196F3;
+    border-radius: 20px;
+}
+.Personal{
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+#firstname{
+    padding-left: 6px;
+    border: 1px solid #2196F3;
+    border-radius: 15px;
+    height: 20px;
+    width: 90px;
+}
+#lastname{
+    padding-left: 6px;
+    border: 1px solid #2196F3;
+    border-radius: 15px;
+    width: 120px;
+    height: 20px;
+}
+.Country{
+    margin-bottom: 5px;
+    padding-left: 2px;
+    width: 100%;
+    height: 25px;
+    border: 1px solid #2196F3;
+    border-radius: 15px;
+}
+.note{
+    position: relative;
+    left: 0%;
+}
+.week{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 0%;
+    gap: 100px;
+}
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 27px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    background-color: #2196F3;
+}
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+.slider.round {
+    border-radius: 30px;
+}  
+.slider.round:before {
+    border-radius: 50%;
+    background-color: #2196F3;
+}
+.checkbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    left: 0%;
+}
+#myCheck{
+    width: 30px;
+    position: relative;
+    left: 5px;
+}
+.btn{
+    padding-top: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid #2196F3;
+    border-right: 20px;
+}
+.one{
+    border: 2px solid #2196F3;
+    background-color: #2196F3;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+}
+.two{
+    border: 2px solid #2196F3;
+    border: 2px solid #2196F3;
+    padding: 5px 20px 5px 20px;
+    border-radius: 20px;
+}
+.top{
+    border-top: 2px solid #2196F3;
+}
+#mySlider{
+    width: 73%;
+    height: 3px;
+}

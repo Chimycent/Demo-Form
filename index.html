@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styes.css">
+    <title>Form</title>
+</head>
+<body>
+    <div class="content">
+        <div>
+            <h2>User Settings</h2>
+        <p>Lorem Ipsum dolor sit amet, consecteuer</p>
+        </div>
+        <div>
+            <hr class="top">
+            <h2>Personal Info</h2>
+            <form>
+                <div class="Personal">
+                    <input type="text" id="firstname" placeholder="First Name" >    
+                    <input type="text" id="lastname" placeholder="Last Name" >
+                </div>
+            </form>
+                <div>
+                    <select class="Country">
+                        <option>Country</option>
+                        <option>Nigeria</option>
+                        <option>Ghana</option>
+                        <option>Cameroon</option>
+                    </select> 
+                </div>
+        </div>
+        <div>
+            <hr class="top">
+            <div>
+                <h2 class="note">Notifications</h2>
+                <div>
+                    <div class="week">
+                        <p>Weekly Reports</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+            
+                    <div class="week">
+                        <p>Pull Reports</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+            
+                    <div class="week">
+                        <p>Deployment Triggers</p>
+                        <label class="switch">
+                            <input type="checkbox">
+                            <span class="slider round"></span>
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <hr class="top">
+                <div>
+                    <h2 class="note">Security</h2>
+                    <div class="checkbox">
+                        <label for="myCheckbox">Run security check uoin log in</label>
+                    <input type="checkbox" name="myCheckbox" id="myCheck">
+                    </div>
+                <div class="note">
+                        <label for="slider">Less</label>
+                <input type="range" id="mySlider" name="slider" min="0" max="100" value="50">
+                <span id="sliderValue">More</span>
+                </div>
+                </div>
+            </div>
+            <div class="btn">
+                <button class="one">Save</button>
+                <button class="two">Cancel</button>
+            </div>
+    </div>
+</body>
+</html>
